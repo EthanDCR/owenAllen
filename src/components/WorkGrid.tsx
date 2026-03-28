@@ -1,6 +1,9 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import styles from './WorkGrid.module.css'
 
+
+
+
 type GridItem = {
   area: 'a' | 'b' | 'c' | 'd' | 'e'
   type: 'image' | 'video' | 'lottie'

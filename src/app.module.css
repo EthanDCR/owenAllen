@@ -25,6 +25,12 @@
     text-decoration: none;
   }
 
+.page1Links a:hover{
+  text-decoration: underline;
+}
+
+
+
 .owenAllenLogo{ 
   position: absolute;
     top: 50%;
@@ -48,13 +54,20 @@ height: auto;
 }
 
 .resumeIcon {
-  width: 200px;
+  width: 150px;
   height: auto;
+  padding-left: 100px;
+  padding-bottom: 50px;
 }
 
-.cornerAnimation{
-  position: absolute;
-  right: 0;
+.resumeIcon:hover{
+opacity: 80%;
+}
+
+.cornerAnimation {
+  width: 800px;
+  height: 800px;
+  pointer-events: none;
 }
 
 .page2Container {
