@@ -26,10 +26,8 @@
   }
 
 .page1Links a:hover{
-  text-decoration: underline;
+  opacity: 80%;
 }
-
-
 
 .owenAllenLogo{ 
   position: absolute;
