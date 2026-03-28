@@ -6,6 +6,7 @@ import resumeIcon from "./assets/RESUME-ICON.svg"
 import resumePdf from "./assets/owenSchattschneiderResume.pdf"
 import WorkGrid from "./components/WorkGrid"
 
+
 function App() {
   return (
     <>
