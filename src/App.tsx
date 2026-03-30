@@ -1,5 +1,7 @@
 import styles from "./app.module.css"
+import { useState, useEffect, useRef } from 'react'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import upArrow from "./assets/uparrow.png"
 import owenAllenLogo from "./assets/OWENALLEN_LOGO.svg"
 import cornerAnimation from "./assets/lotties/CIRCLE_ANIMATION_OPTIMIZED2.json"
 import resumeIcon from "./assets/RESUME-ICON.svg"
@@ -17,14 +19,36 @@ import ownerInfo from "../src/assets/OWNERINFO_PNG.png"
 
 
 function App() {
+  const [showArrow, setShowArrow] = useState(false)
+  const homeRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowArrow(!entry.isIntersecting),
+      { threshold: 0.1 }
+    )
+    if (homeRef.current) observer.observe(homeRef.current)
+    return () => observer.disconnect()
+  }, [])
+
+  const scrollToTop = () => {
+    document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
-      <section id="home" className={styles.page1Container}>
+      {showArrow && (
+        <button className={styles.backToTop} onClick={scrollToTop}>
+          <img src={upArrow} alt="back to top" />
+        </button>
+      )}
+
+      <section id="home" ref={homeRef} className={styles.page1Container}>
 
         <ul className={styles.page1Links}>
           <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Contact</a></li>
         </ul>
 
         <div className={styles.owenAllenLogo}>
@@ -66,8 +90,6 @@ function App() {
         <About />
       </section>
 
-      <section id="contact" className={styles.page4Container}>
-      </section>
     </>
   )
 }

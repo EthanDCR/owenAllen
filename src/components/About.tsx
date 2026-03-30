@@ -1,10 +1,9 @@
 import styles from './About.module.css'
 import owenPortrait from '../assets/owenPortrait.png'
 import clouds from "../assets/Clouds.svg"
-import linkedin from "../assets/socialSVGs/LinkedIn.svg"
-import beehance from "../assets/socialSVGs/Behance.svg"
-import mail from "../assets/socialSVGs/mail.svg"
-import peter from "../assets/socialSVGs/petaaa.png"
+import linkedinSVG from "../assets/socialSVGs/LINKDIN_ICON.svg"
+import beehanceSVG from "../assets/socialSVGs/BEHANCE_ICON.svg"
+import mailSVG from "../assets/socialSVGs/EMAIL_ICON.svg"
 
 
 
@@ -24,10 +23,9 @@ export default function About() {
           </div>
         </div>
         <div className={styles.tvDots}>
-          <div className={styles.socialLink}><img src={linkedin} /></div>
-          <div className={styles.socialLink}><img src={beehance} /></div>
-          <div className={styles.socialLink}><img src={linkedin} /></div>
-          <div className={styles.socialLink}><img src={beehance} /></div>
+          <div className={styles.socialLink}><img src={linkedinSVG} /></div>
+          <div className={styles.socialLink}><img src={beehanceSVG} /></div>
+          <div className={styles.socialLink}><img src={mailSVG} /></div>
         </div>
       </div>
 

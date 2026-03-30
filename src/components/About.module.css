@@ -82,7 +82,7 @@ font-size: 28px;
 
 .tvDots {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 88%;
 }
 
@@ -90,6 +90,11 @@ font-size: 28px;
   width: 44px;
   height: 44px;
 }
+
+.socialLink:hover{
+  opacity: 50%;
+}
+
 
 .footer {
   opacity: 80%;
@@ -109,6 +114,7 @@ font-size: 28px;
   display: flex;
   align-items: center;
   gap: 24px;
+padding-right: 40px;
 }
 
 .line {

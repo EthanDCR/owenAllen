@@ -68,6 +68,26 @@ opacity: 80%;
   pointer-events: none;
 }
 
+.backToTop {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.backToTop img {
+  width: 50px;
+  height: auto;
+}
+
+.backToTop:hover {
+  opacity: 70%;
+}
+
 .page2Container {
   background-color: black;
   height: 100vh;
