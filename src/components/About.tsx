@@ -37,6 +37,7 @@ export default function About() {
         </div>
       </div>
 
+      <img src={clouds} className={styles.clouds} alt="" />
       <img src={owenPortrait} className={styles.portrait} alt="Owen" />
     </div>
   )
