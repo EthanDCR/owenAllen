@@ -16,7 +16,8 @@ import clutch from "./assets/workGridAssets/clutch.png"
 import vx1000 from "../src/assets/videos/vx1000.mp4"
 import billsbbq from "../src/assets/workGridAssets/BILLS_BBQ.png"
 import ownerInfo from "../src/assets/OWNERINFO_PNG.png"
-
+import rusty from "../src/assets/rusty.mp4"
+import cigar from "../src/assets/cigar.mp4"
 
 function App() {
   const [showArrow, setShowArrow] = useState(false)
@@ -69,19 +70,18 @@ function App() {
           a={<img src={weShallOvercome} />}
           b={<video src={konaHover} autoPlay muted loop playsInline />}
           c={<img src={clutch} />}
-          d={<video src={scoota} autoPlay muted loop playsInline />}
+          d={<video src={cigar} autoPlay muted loop playsInline />}
           e={<video src={projectDemo} autoPlay muted loop playsInline />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-
           a={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           b={<video src={vx1000} autoPlay muted loop playsInline />}
           c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />}
           d={<video src={scoota} autoPlay muted loop playsInline />}
-          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+          e={<video src={rusty} autoPlay muted loop playsInline />}
         />
       </section>
 

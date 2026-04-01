@@ -4,10 +4,19 @@ import clouds from "../assets/Clouds.svg"
 import linkedinSVG from "../assets/socialSVGs/LINKDIN_ICON.svg"
 import beehanceSVG from "../assets/socialSVGs/BEHANCE_ICON.svg"
 import mailSVG from "../assets/socialSVGs/EMAIL_ICON.svg"
-
+import { useState } from 'react'
 
 
 export default function About() {
+  const [highLightMail, setHighLightMail] = useState<boolean>(false)
+
+  const lightMail = () => {
+    setHighLightMail(true)
+    setTimeout(() => {
+      setHighLightMail(false)
+    }, 3000)
+  }
+
   return (
     <div className={styles.container}>
 
@@ -22,10 +31,21 @@ export default function About() {
               I use digital tools to build sharp, intentional work—and I’m looking for an internship to take it further.</p>
           </div>
         </div>
+
         <div className={styles.tvDots}>
-          <div className={styles.socialLink}><img src={linkedinSVG} /></div>
-          <div className={styles.socialLink}><img src={beehanceSVG} /></div>
-          <div className={styles.socialLink}><img src={mailSVG} /></div>
+
+          <a href='https://www.linkedin.com/in/owen-schattschneider-9bb990123'>
+            <div className={styles.socialLink}><img src={linkedinSVG} /></div>
+          </a>
+
+          <a href='https://www.behance.net/owenschatts'>
+            <div className={styles.socialLink}><img src={beehanceSVG} /></div>
+          </a>
+
+          <div onClick={() => {
+            lightMail()
+          }} className={styles.socialLink}><img src={mailSVG} /></div>
+
         </div>
       </div>
 
@@ -36,7 +56,13 @@ export default function About() {
         </div>
         <div className={styles.footerRow}>
           <div className={styles.line}></div>
-          <span className={styles.contactEmail}>owenschatt@gmail.com</span>
+
+          {highLightMail ?
+            <span style={{ color: "blue" }} className={styles.contactEmail}>owenschatt@gmail.com</span>
+            :
+            <span className={styles.contactEmail}>owenschatt@gmail.com</span>
+          }
+
         </div>
         <div className={styles.footerRow}>
           <div className={styles.line}></div>
