@@ -74,16 +74,19 @@
 }
 
 .tvInner h1 {
+  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
   padding: 0px;
   color: white;
 }
 
 .tvInner p {
+  margin-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 28px;
   margin-top: 0;
+  margin-left: 10px;
 }
 
 .tvDots {
