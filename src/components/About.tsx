@@ -58,7 +58,7 @@ export default function About() {
           <div className={styles.line}></div>
 
           {highLightMail ?
-            <span style={{ color: "blue" }} className={styles.contactEmail}>owenschatt@gmail.com</span>
+            <span style={{ color: "blue", opacity: "80%" }} className={styles.contactEmail}>owenschatt@gmail.com</span>
             :
             <span className={styles.contactEmail}>owenschatt@gmail.com</span>
           }
@@ -72,6 +72,6 @@ export default function About() {
 
       <img src={clouds} className={styles.clouds} alt="" />
       <img src={owenPortrait} className={styles.portrait} alt="Owen" />
-    </div>
+    </div >
   )
 }

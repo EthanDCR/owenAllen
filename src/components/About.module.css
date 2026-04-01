@@ -107,7 +107,7 @@ font-size: 28px;
   flex-direction: column;
   justify-content: center;
   padding: 45px 60px; 
-  gap: 4px;
+  gap: 12px;
 }
 
 .footerRow {
@@ -124,6 +124,7 @@ padding-right: 40px;
 }
 
 .contactLabel {
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: white;
   line-height: 1;
@@ -131,6 +132,7 @@ padding-right: 40px;
 }
 
 .contactEmail {
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: white;
   line-height: 1;
@@ -138,6 +140,7 @@ padding-right: 40px;
 }
 
 .contactPhone {
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: white;
