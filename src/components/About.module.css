@@ -47,6 +47,7 @@
   align-items: center;
   gap: 24px;
   width: 40%;
+  z-index: 2;
 }
 
 .tvOuter {
@@ -81,7 +82,7 @@
 }
 
 .tvInner p {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 28px;
@@ -98,6 +99,7 @@
 .socialLink {
   width: 44px;
   height: 44px;
+  z-index: 1;
 }
 
 .socialLink:hover{
@@ -122,7 +124,7 @@
 .footerRow {
   display: flex;
   align-items: center;
-  gap: 24px;
+gap: 24px;
 padding-right: 40px;
 }
 

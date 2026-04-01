@@ -79,7 +79,7 @@ function App() {
         <WorkGrid
           a={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           b={<video src={vx1000} autoPlay muted loop playsInline />}
-          c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />}
+          c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={scoota} autoPlay muted loop playsInline />}
           e={<video src={rusty} autoPlay muted loop playsInline />}
         />
