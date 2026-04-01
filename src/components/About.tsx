@@ -36,23 +36,23 @@ export default function About() {
             </p>
           </div>
         </div>
+      </div>
 
-        <div className={styles.tvDots}>
+      <div className={styles.tvDots}>
 
-          <a href='https://www.linkedin.com/in/owen-schattschneider-9bb990123'>
-            <div className={styles.socialLink}><img src={linkedinSVG} /></div>
-          </a>
+        <a href='https://www.linkedin.com/in/owen-schattschneider-9bb990123'>
+          <div className={styles.socialLink}><img src={linkedinSVG} /></div>
+        </a>
 
-          <a href='https://www.behance.net/owenschatts'>
-            <div className={styles.socialLink}><img src={beehanceSVG} /></div>
-          </a>
+        <a href='https://www.behance.net/owenschatts'>
+          <div className={styles.socialLink}><img src={beehanceSVG} /></div>
+        </a>
 
-          <div style={{ position: 'relative' }}>
-            <div onClick={() => { lightMail() }} className={styles.socialLink}><img src={mailSVG} /></div>
-            {highLightMail && <span className={styles.copiedToast}>email copied!</span>}
-          </div>
-
+        <div style={{ position: 'relative' }}>
+          <div onClick={() => { lightMail() }} className={styles.socialLink}><img src={mailSVG} /></div>
+          {highLightMail && <span className={styles.copiedToast}>email copied!</span>}
         </div>
+
       </div>
 
       <div className={styles.footer}>
