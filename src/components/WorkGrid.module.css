@@ -16,6 +16,10 @@
 .d { grid-area: d; overflow: hidden; background: black; }
 .e { grid-area: e; overflow: hidden; background: black; }
 
+.grid video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr 1fr;
