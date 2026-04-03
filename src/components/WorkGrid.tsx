@@ -7,11 +7,12 @@ interface WorkGridProps {
   d?: any
   e?: any
   f?: any
+  rows?: string
 }
 
-export default function WorkGrid({ a, b, c, d, e, f }: WorkGridProps) {
+export default function WorkGrid({ a, b, c, d, e, f, rows }: WorkGridProps) {
   return (
-    <div className={styles.grid}>
+    <div className={styles.grid} style={rows ? { gridTemplateRows: rows } : undefined}>
       <div className={styles.a}>{a}</div>
       <div className={styles.b}>{b}</div>
       <div className={styles.c}>{c}</div>

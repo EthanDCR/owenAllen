@@ -97,13 +97,12 @@ function App() {
           c={<img src={clutch} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           d={<video src={cigar} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           e={<video src={projectDemo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
-          f={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-          a={<video src={adBanner} style={{ width: '100%', height: '100%', objectFit: 'contain' }} autoPlay muted loop playsInline />}
+          a={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
           b={isMobile
             ? <video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
             : <video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
@@ -125,6 +124,8 @@ function App() {
           e={<video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
+
+      <video src={adBanner} style={{ width: '100%', height: '100%', objectFit: 'contain' }} autoPlay muted loop playsInline />
 
       <section id="about">
         <About />
