@@ -74,31 +74,31 @@ function App() {
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-          a={<img src={weShallOvercome} />}
-          b={<video src={konaHover} autoPlay muted loop playsInline />}
-          c={<img src={clutch} />}
-          d={<video src={cigar} autoPlay muted loop playsInline />}
-          e={<video src={projectDemo} autoPlay muted loop playsInline />}
+          a={<img src={weShallOvercome} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />}
+          b={<video src={konaHover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          c={<img src={clutch} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+          d={<video src={cigar} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          e={<video src={projectDemo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
           a={<img src={billsbbq} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          b={<video src={vx1000} autoPlay muted loop playsInline />}
+          b={<video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={ownerInfo} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          d={<video src={scoota} autoPlay muted loop playsInline />}
-          e={<video src={rusty} autoPlay muted loop playsInline />}
+          d={<video src={scoota} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          e={<video src={rusty} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
       <section id="work" className={styles.page2Container}>
         <WorkGrid
-          a={<img src={constructivist} style={{ objectFit: 'cover' }} />}
-          b={<video src={wyvern} autoPlay muted loop playsInline />}
+          a={<img src={constructivist} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+          b={<video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          d={<video src={paperCrumble} autoPlay muted loop playsInline />}
-          e={<video src={tvboy} autoPlay muted loop playsInline />}
+          d={<video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          e={<video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
