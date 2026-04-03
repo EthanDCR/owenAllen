@@ -18,7 +18,7 @@ import billsbbq from "../src/assets/workGridAssets/BILLS_BBQ.png"
 import ownerInfo from "../src/assets/OWNERINFO_PNG.png"
 import rusty from "../src/assets/rusty.mp4"
 import cigar from "../src/assets/cigar.mp4"
-//grid 3
+//grid3
 import kavosMenu from "../src/assets/workGridAssets/kavosmenu.png"
 import wyvern from "../src/assets/workGridAssets/wyvern.mp4"
 import constructivist from "../src/assets/workGridAssets/CONSTRUCTIVIST.jpg"
