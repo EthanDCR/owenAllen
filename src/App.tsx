@@ -122,8 +122,12 @@ function App() {
             ? <video src={vx1000} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
             : <video src={wyvern} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
           c={<img src={kavosMenu} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          d={<video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
-          e={<video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          d={isMobile
+            ? <video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
+            : <video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
+          e={isMobile
+            ? <video src={paperCrumble} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />
+            : <video src={tvboy} style={{ width: '100%', height: '100%', objectFit: 'cover' }} autoPlay muted loop playsInline />}
         />
       </section>
 
