@@ -16,4 +16,16 @@
 .d { grid-area: d; overflow: hidden; background: black; }
 .e { grid-area: e; overflow: hidden; background: black; }
 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d d"
+      "e e";
+  }
+}
+
 
